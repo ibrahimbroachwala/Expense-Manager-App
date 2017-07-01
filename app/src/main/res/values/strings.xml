@@ -70,9 +70,9 @@
         <item><b>Dec</b></item>
     </string-array>
     
-    <string name="banner_ad_unit_id">ca-app-pub-9084920470877631/4625731104</string>
-    <string name="banner_ad_unit_id2">ca-app-pub-9084920470877631/8682831500</string>
+    <string name="banner_ad_unit_id"></string>
+    <string name="banner_ad_unit_id2"></string>
 
 
-    <string name="ABS_key">AEdPqrEAAAAICsi-VdgWYJ7lnImenHHz4kLgsOM_wQGpepq6Tw</string>
+    <string name="ABS_key"></string>
 </resources>
