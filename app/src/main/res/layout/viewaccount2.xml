@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+    android:id="@+id/total_bar"
+        android:elevation="6dp"
+    android:background="@drawable/cardbg"
+    android:layout_alignParentBottom="true"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_toLeftOf="@+id/total"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="14dp"></LinearLayout>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@+id/tot_inc"
+            android:src="@drawable/inc_arrow"
+            android:layout_toLeftOf="@+id/tot_inc"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tot_exp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/exp_arrow"
+            android:layout_toLeftOf="@+id/tot_inc"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="15dp"
+            android:id="@+id/tot_inc"
+            android:layout_toLeftOf="@+id/total"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:textColor="#15e112"
+            android:gravity="center_vertical"
+            android:text="income"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="15dp"
+            android:id="@+id/tot_exp"
+            android:gravity="center_vertical"
+            android:textColor="#f23d1d"
+            android:layout_toLeftOf="@+id/total"
+            android:layout_below="@+id/tot_inc"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:text="expense"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Total"
+            android:gravity="center_vertical"
+            android:id="@+id/thead"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7dp"
+
+            android:textColor="@color/Bluetotal"
+            android:text="total"
+            android:id="@+id/total"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filter_bar"
+
+        android:layout_above="@+id/total_bar"
+
+        >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll">
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/acc_head_bar7"
+    android:elevation="6dp"
+    android:background="@drawable/cardbgblue"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:text="A/c: "
+    android:paddingLeft="10dp"
+    android:id="@+id/ac"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Account"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+
+        android:textColor="#ffffff"
+        android:id="@+id/current_acc"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ac"
+        android:layout_toEndOf="@+id/ac" />
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_spinner"
+        android:id="@+id/accountsspin"
+        />
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/cardbg"
+        android:elevation="4dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:id="@+id/filter_bar"
+        android:weightSum="100"
+        android:layout_below="@+id/acc_head_bar7"
+        android:layout_alignRight="@+id/acc_head_bar7"
+        android:layout_alignEnd="@+id/acc_head_bar7">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Bluetotal"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="7dp"
+            android:textSize="13dp"
+            android:text="View By Month"/>
+
+            <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+                android:background="@drawable/border_spinner"
+        android:id="@+id/monthspin"
+        />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border_spinner"
+                android:id="@+id/yearspin"
+                />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="36"
+            android:id="@+id/rg">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Bluetotal"
+                android:id="@+id/all"
+                android:textSize="13dp"
+
+                android:text="All"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/inc"
+                android:textSize="13dp"
+                android:textColor="@color/Bluetotal"
+                android:text="Income"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/exp"
+                android:textSize="13dp"
+                android:textColor="@color/Bluetotal"
+                android:text="Expense"/>
+
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="32"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Bluetotal"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:textSize="13dp"
+            android:text="View by Category"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border_spinner"
+                android:id="@+id/icatspin"
+                />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_spinner"
+            android:id="@+id/ecatspin"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

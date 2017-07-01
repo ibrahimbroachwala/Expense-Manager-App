@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'cs'
+            keyPassword 'emanager'
+            storeFile file('C:/Users/Ibrahimkb/Desktop/FIles/Drive/Apps/emanager.jks')
+            storePassword 'emanager'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.firstapp.android.iaccounts"
+        minSdkVersion 10
+        targetSdkVersion 23
+        versionCode 23
+        versionName "2.51"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile files('libs/opencsv-1.7.jar')
+    compile files('libs/jxl.jar')
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-core:9.6.1'
+    compile 'com.google.firebase:firebase-ads:9.6.1'
+    compile 'com.google.firebase:firebase-storage:9.6.1'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.google.firebase:firebase-messaging:9.6.1'
+    compile 'com.google.android.gms:play-services-ads:9.6.1'
+    compile 'com.google.android.gms:play-services-auth:9.6.1'
+    compile 'com.google.firebase:firebase-auth:9.6.1'
+
+}
+apply plugin: 'com.google.gms.google-services'

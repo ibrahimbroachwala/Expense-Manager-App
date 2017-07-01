@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:text="Amount"
+        android:gravity="center_vertical"
+        android:textColor="@color/Bluetotal"
+
+        android:id="@+id/amt_head"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_toRightOf="@+id/amt_head"
+        android:layout_height="40dp"
+        android:id="@+id/etamt"
+       android:background="@drawable/textfieldbg"
+        android:gravity="center"
+        android:textColor="#f23d1d"
+        android:textSize="25dp"
+        android:elevation="8dp"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:numeric="signed|integer|decimal"
+        />
+    <TextView
+                android:id="@+id/acc_head"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+                android:text="Account"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/cat_head"
+                android:textColor="@color/Bluetotal"
+                android:textSize="17dp"
+                android:layout_below="@+id/etcategory"/>
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:id="@+id/spinner_acc"
+                android:background="@drawable/border_spinner"
+
+                android:layout_alignParentRight="true"
+                android:spinnerMode="dropdown"
+                android:layout_below="@+id/acc_head"
+
+                />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etamt"
+        android:text="Date"
+        android:gravity="center_vertical"
+        android:textColor="@color/Bluetotal"
+
+        android:id="@+id/date_head"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/editText"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/date_head"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/textfieldbg"
+        android:singleLine="true"
+        android:layout_below="@+id/etamt"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+
+
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/browndate"
+        android:id="@+id/bdate"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_below="@+id/etamt"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_marginTop="5dp"
+        android:id="@+id/desc_head"
+        android:textColor="@color/Bluetotal"
+        android:textSize="17dp"
+        android:layout_below="@+id/editText"
+        />
+
+            <TextView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:gravity="center_vertical"
+        android:id="@+id/cat_head"
+                android:layout_marginTop="5dp"
+        android:textColor="@color/Bluetotal"
+        android:textSize="17dp"
+        android:layout_below="@+id/etexp"/>
+
+
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/etcategory"
+        android:background="@drawable/textfieldbg"
+        android:focusable="false"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cat_head"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        />
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:id="@+id/spinner"
+        android:background="@drawable/border_spinner"
+        android:layout_alignParentRight="true"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/cat_head"
+
+        />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/etexp"
+                android:background="@drawable/textfieldbg"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/desc_head"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/etaccount"
+                android:background="@drawable/textfieldbg"
+                android:focusable="false"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/acc_head"
+                android:layout_alignParentLeft="true"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

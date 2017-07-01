@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="version">v 2.5</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="Categories">
+        <item><b>Categories</b></item>
+        <item><b>Food</b></item>
+        <item><b>Travel</b></item>
+        <item><b>Health</b></item>
+        <item><b>Party</b></item>
+        <item><b>Stationary</b></item>
+        <item><b>Personal</b></item>
+        <item><b>Education</b></item>
+        <item><b>Bill</b></item>
+        <item><b>Hotel</b></item>
+        <item><b>Fuel</b></item>
+
+    </string-array>
+    <string-array name="fCategories">
+        <item><b>All</b></item>
+        <item><b>Food</b></item>
+        <item><b>Travel</b></item>
+        <item><b>Health</b></item>
+        <item><b>Party</b></item>
+        <item><b>Stationary</b></item>
+        <item><b>Personal</b></item>
+        <item><b>Education</b></item>
+        <item><b>Bill</b></item>
+        <item><b>Hotel</b></item>
+        <item><b>Fuel</b></item>
+
+    </string-array>
+    <string-array name="iCategories">
+        <item><b>Categories</b></item>
+        <item><b>Salary</b></item>
+        <item><b>PocketMoney</b></item>
+        <item><b>Bonus</b></item>
+        <item><b>Sales</b></item>
+        <item><b>Gift</b></item>
+
+
+    </string-array>
+    <string-array name="fiCategories">
+        <item><b>All</b></item>
+        <item><b>Salary</b></item>
+        <item><b>Pocket Money</b></item>
+        <item><b>Bonus</b></item>
+        <item><b>Sales</b></item>
+        <item><b>Gift</b></item>
+
+
+    </string-array>
+    <string-array name="Months">
+        <item><b>All</b></item>
+        <item><b>Jan</b></item>
+        <item><b>Feb</b></item>
+        <item><b>Mar</b></item>
+        <item><b>Apr</b></item>
+        <item><b>May</b></item>
+        <item><b>June</b></item>
+        <item><b>July</b></item>
+        <item><b>Aug</b></item>
+        <item><b>Sept</b></item>
+        <item><b>Oct</b></item>
+        <item><b>Nov</b></item>
+        <item><b>Dec</b></item>
+    </string-array>
+    
+    <string name="banner_ad_unit_id">ca-app-pub-9084920470877631/4625731104</string>
+    <string name="banner_ad_unit_id2">ca-app-pub-9084920470877631/8682831500</string>
+
+
+    <string name="ABS_key">AEdPqrEAAAAICsi-VdgWYJ7lnImenHHz4kLgsOM_wQGpepq6Tw</string>
+</resources>

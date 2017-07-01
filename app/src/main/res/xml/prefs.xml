@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:title="Turn Reminder On/Off"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:key="remindertoggle"
+        android:summary="Daily reminder to add expenses."
+        android:checked="true"
+        android:defaultValue="true"
+        />
+    <ListPreference
+        android:title="Hour of day"
+        android:entries="@array/time"
+        android:entryValues="@array/values"
+        android:key="hour_of_day"
+        android:summary="8 pm"
+        />
+
+
+</PreferenceScreen>

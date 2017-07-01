@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#efefef"
+    tools:context="com.firstapp.android.iaccounts.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/adView"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:id="@+id/relativeLayout1"
+        android:weightSum="100"
+        android:background="@drawable/cardbg"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:elevation="5dp"
+
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/addincome"
+                android:id="@+id/binc"
+                android:elevation="6dp"
+                android:layout_alignTop="@+id/badd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Income"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/textView" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:elevation="5dp"
+
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/addexpense"
+                android:id="@+id/badd"
+                android:elevation="6dp"
+                android:layout_above="@+id/textView2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Expense"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:elevation="6dp"
+    android:background="@drawable/cardbg"
+    android:id="@+id/monthly_overview"
+    android:layout_below="@id/relativeLayout1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/cardbgblue"
+                android:id="@+id/month_head">
+                <Spinner
+                    android:id="@+id/spinner_yearhome"
+                    android:layout_width="70dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_toLeftOf="@+id/spinner_monthhome"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_spinner"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"></Spinner>
+
+                <Spinner
+                    android:id="@+id/spinner_monthhome"
+                    android:layout_width="70dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_spinner"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"></Spinner>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Monthly Overview"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:id="@+id/mo"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp" />
+
+
+            </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/month_head"
+        android:layout_marginTop="0dp"
+        android:id="@+id/relativeLayout"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Expenditure :"
+        android:id="@+id/tvexphead"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:paddingTop="50dp"
+
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Income :"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tvinchead"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:paddingTop="20dp"
+         />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvexp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#f23d1d"
+        android:numeric="signed|integer|decimal"
+        android:layout_alignParentRight="true"
+        android:paddingTop="50dp"
+
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvinc"
+        android:layout_marginRight="12dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#15e112"
+        android:numeric="signed|integer|decimal"
+        android:layout_alignParentRight="true"
+        android:paddingTop="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark">
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvbal"
+        android:textSize="19dp"
+        android:layout_marginRight="12dp"
+        android:numeric="signed|integer|decimal"
+        android:textColor="@color/Bluetotal"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:paddingTop="95dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Balance :"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvbalhead"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="95dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Daily_transactions"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/cardbg"
+    android:elevation="6dp"
+    android:layout_below="@+id/monthly_overview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/date_head_bar"
+            android:background="@drawable/cardbgblue"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Daily Transactions"
+                android:id="@+id/bydatehead"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/browndate"
+                android:id="@+id/home_date_but"
+                android:layout_marginRight="12dp"
+                />
+
+
+</RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/date_head_bar"
+                android:layout_marginTop="0dp"
+                android:id="@+id/Date">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/etdatehome"
+                    android:text="Date"
+                    android:focusable="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="total"
+                    android:id="@+id/home_total"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/Bluetotal"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+                </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Date"
+        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/home_ll">
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/account_bar"
+            android:layout_below="@+id/adView"
+            android:elevation="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/cardbgblue"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="A/c: "
+                android:id="@+id/ac_home"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="Account"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/ac_home"
+                android:id="@+id/current_acc_home"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true" />
+            <Spinner
+                android:id="@+id/spinner_accounthome"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/border_spinner"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/current_acc_home"></Spinner>
+
+    </RelativeLayout>
+</RelativeLayout>

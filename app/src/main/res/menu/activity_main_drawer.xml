@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_viewdb"
+            android:icon="@drawable/view"
+
+            android:title="Transaction History" />
+
+    </group>
+
+
+    <group >
+        <item
+            android:id="@+id/nav_export"
+
+            android:icon="@drawable/export2"
+            android:title="Export to Excel" />
+
+            <item
+                android:id="@+id/nav_pref"
+                android:icon="@drawable/preferences"
+
+                android:title="Preferences" />
+
+
+        <item
+            android:id="@+id/nav_about"
+
+            android:icon="@drawable/info"
+            android:title="About" />
+        <item
+            android:id="@+id/rate_app"
+            android:title="Rate App"
+            android:icon="@drawable/rateapp"
+            />
+    </group>
+
+</menu>

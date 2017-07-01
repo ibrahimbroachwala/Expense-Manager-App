@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="144dp"
+    android:layout_height="144dp"
+    android:src="@drawable/iconmain"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@color/Bluetotal"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:id="@+id/moc"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moc"
+        android:layout_centerHorizontal="true"
+        android:text="@string/version"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed and Designed by: "
+        android:layout_marginTop="250dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/dvhead"
+        android:textColor="@color/Bluetotal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer E-mail:  "
+        android:layout_marginTop="313dp"
+        android:textStyle="bold"
+        android:id="@+id/emailhead"
+        android:textSize="18dp"
+        android:textColor="@color/Bluetotal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+
+        android:text="Ibrahim Broachwala"
+        android:id="@+id/name"
+        android:layout_below="@+id/dvhead"
+        android:textSize="16dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="calmchor.ib96@gmail.com"
+        android:layout_below="@+id/emailhead"
+        android:textIsSelectable="true"
+        android:textSize="16dp"/>
+
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/prefadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id2">
+    </com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar2"
+        android:paddingBottom="25dp"
+        android:layout_above="@+id/prefadView"
+        android:id="@+id/parentscroll">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="25dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/pref_exp_head"
+        android:text="Add. Edit. Delete."
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/pref_inc_head"
+        android:text="Add. Edit. Delete."
+        android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pref_acc_head"
+                android:layout_marginTop="17dp"
+                android:id="@+id/pref_acc_head_2"
+                android:text="Accounts"
+                android:textColor="#000000"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="15dp"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/pref_acc_head"
+                android:id="@+id/acccounts_but"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_effect"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/pref_acc_head_2"
+                android:text="Default acc"
+                android:id="@+id/default_acc_pref"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accounts"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/pref_acc_head"
+                android:textColor="@color/Bluetotal"
+                android:textSize="16dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:layout_below="@+id/acccounts_but"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/pref_cat_head"
+        android:textColor="@color/Bluetotal"
+        android:textSize="16dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/pref_cat_head"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/exp_cats_but"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_effect"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pref_cat_head"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pref_exp_head"
+        android:text="Expense Categories"
+        android:textColor="#000000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="15dp"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/inc_cats_but"
+        android:layout_below="@+id/exp_cats_but"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_effect"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/exp_cats_but"
+        android:text="Income Categories"
+        android:id="@+id/pref_inc_head"
+        android:textColor="#000000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="15dp"
+         />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminder"
+        android:layout_below="@+id/del_wallet_but"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/Bluetotal"
+        android:textSize="16dp"
+        android:id="@+id/Rem_head_pref" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/del_wallet_but"
+            android:id="@android:id/list"
+            >
+
+        </ListView>
+
+            <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/pref_del_head"
+        android:layout_below="@+id/pref_del2_head"
+        android:text="Delete Record"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pref_del_head"
+        android:layout_marginTop="15dp"
+        android:text="Delete all Transaction records."
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textView5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset App"
+                android:layout_below="@+id/inc_cats_but"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/pref_del2_head"
+                android:textColor="@color/Bluetotal"
+                android:textSize="16dp"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/del_wallet_but"
+            android:background="@drawable/button_effect"
+                android:layout_below="@+id/pref_del2_head"
+                android:layout_marginTop="7dp"
+            android:layout_alignLeft="@+id/inc_cats_but"
+            android:layout_alignStart="@+id/inc_cats_but"
+            android:layout_alignRight="@+id/inc_cats_but"
+            android:layout_alignEnd="@+id/inc_cats_but" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

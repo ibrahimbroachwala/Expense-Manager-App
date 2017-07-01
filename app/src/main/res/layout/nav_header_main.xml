@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="right"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1">
+
+
+<ImageView
+    android:layout_width="76dp"
+    android:layout_height="76dp"
+    android:id="@+id/icon"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/iconmain"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Manager"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:id="@+id/app_name"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/icon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version"
+        android:textStyle="bold"
+        android:textColor="#3ebde7"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/app_name"/>
+
+
+
+</RelativeLayout>

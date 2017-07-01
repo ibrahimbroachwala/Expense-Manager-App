@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingTop="10dp"
+android:paddingLeft="10dp"
+android:paddingRight="10dp"
+android:paddingBottom="15dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:text="Amount"
+            android:gravity="center_vertical"
+            android:textColor="@color/Bluetotal"
+
+            android:id="@+id/amt_head"
+            android:textSize="17dp"/>
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/ietamt"
+            android:background="@drawable/textfieldbg"
+            android:textColor="#15e112"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:numeric="signed|integer|decimal"
+            android:layout_toRightOf="@+id/amt_head"
+            android:layout_toEndOf="@+id/amt_head" />
+        <TextView
+            android:id="@+id/acc_head"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Account"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/Bluetotal"
+            android:textSize="17dp"
+            android:layout_below="@+id/ietcategory"/>
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:id="@+id/ispinner_acc"
+            android:background="@drawable/border_spinner"
+
+            android:layout_alignParentRight="true"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/acc_head"
+
+            />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ietamt"
+            android:text="Date"
+            android:gravity="center_vertical"
+            android:textColor="@color/Bluetotal"
+
+            android:id="@+id/date_head"
+            android:textSize="17dp"/>
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/ieditText"
+            android:gravity="center"
+            android:background="@drawable/textfieldbg"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:layout_below="@+id/ietamt"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:cursorVisible="false"
+
+
+            android:layout_toRightOf="@+id/date_head"
+            android:layout_toEndOf="@+id/date_head" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/browndate"
+            android:id="@+id/ibdate"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ieditText"
+            android:layout_below="@+id/ietamt"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="5dp"
+            android:id="@+id/desc_head"
+            android:textColor="@color/Bluetotal"
+            android:textSize="17dp"
+            android:layout_below="@+id/ieditText"
+            />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:gravity="center_vertical"
+            android:id="@+id/cat_head"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/Bluetotal"
+            android:textSize="17dp"
+            android:layout_below="@+id/ietexp"/>
+
+
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:id="@+id/ispinner"
+            android:background="@drawable/border_spinner"
+            android:layout_alignParentRight="true"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/cat_head"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/ietexp"
+            android:background="@drawable/textfieldbg"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/desc_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/ietaccount"
+            android:background="@drawable/textfieldbg"
+            android:focusable="false"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/acc_head"
+            android:layout_alignParentLeft="true"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:cursorVisible="false"
+            />
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/ietcategory"
+            android:background="@drawable/textfieldbg"
+            android:focusable="false"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:layout_below="@+id/cat_head"
+            android:layout_alignLeft="@+id/ietaccount"
+            android:layout_alignStart="@+id/ietaccount" />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
